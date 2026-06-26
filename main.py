@@ -1,8 +1,9 @@
 import re
 from collections import defaultdict
 from pypdf import PdfWriter
+from pathlib import Path
 
-folder = input("Введите путь с файлами")
+folder = Path(input("Введите путь с файлами: "))
 out_dir = folder
 out_dir.mkdir(exist_ok=True)
 
